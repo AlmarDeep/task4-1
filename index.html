@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var arraynum = [];
+for (let i = 0; i < 10; i++) {
+  arraynum.push(Math.floor(Math.random() * 10));
+}
+
+
+let sum = 0;
+for (let i = 0; i < arraynum.length; i++) {
+  if (arraynum[i] % 2 === 0) {
+    sum += arraynum[i];
+  }
+}
+
+let s = 0;
+for (let i = 0; i < arraynum.length; i++) {
+  if (arraynum[i] < 5) {
+    s += arraynum[i];
+  }
+}
+document.writeln(arraynum);
+document.writeln(sum);
+document.writeln(s);
+     
+    var userdata={
+        name:'almar',
+        num:1,
+        age:24,
+        email:'almardeeb@gmail.com',
+    }
+ 
+    console.log(userdata);
+   
+    document.writeln(userdata.name);
+    document.writeln(userdata.num);
+    document.writeln(userdata.age);
+    document.writeln(userdata.email);
+
+
+   
+
+    </script>
+</body>
+</html>
